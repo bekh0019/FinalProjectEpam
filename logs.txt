@@ -212,3 +212,5 @@
 2018-11-02 15:41:37 INFO  CommonServlet:219631 - Servlet finished
 2018-11-02 15:43:58 INFO  SortServlet:360549 - Started servlet com.jdbc.application.servlets.SortServlet
 2018-11-02 15:43:59 INFO  SortServlet:360803 - Finished servlet com.jdbc.application.servlets.SortServlet
+2018-11-02 16:14:54 INFO  SessionAttributeListener:2216118 - Attribute was deleted from Session
+2018-11-02 16:14:54 INFO  SessionAttributeListener:2216247 - Attribute was deleted from Session
