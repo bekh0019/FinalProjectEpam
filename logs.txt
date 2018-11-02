@@ -1,0 +1,214 @@
+2018-11-01 19:43:36 INFO  CommonServlet:2403 - Servlet started
+2018-11-01 19:43:36 INFO  CommonServlet:2408 - Servlet finished
+2018-11-01 19:43:36 INFO  CommonServlet:2495 - Servlet started
+2018-11-01 19:43:36 INFO  CommonServlet:2524 - Servlet finished
+2018-11-01 19:43:44 INFO  LoginServlet:10548 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:43:45 INFO  SessionAttributeListener:10847 - Attribute was added to Session
+2018-11-01 19:43:45 INFO  SessionAttributeListener:10896 - Attribute was added to Session
+2018-11-01 19:43:45 INFO  SessionAttributeListener:10900 - Attribute was added to Session
+2018-11-01 19:43:45 INFO  EnterToCabinetServlet:10911 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:43:45 INFO  EnterToCabinetServlet:11330 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:43:49 INFO  EnterToCabinetServlet:15499 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:43:50 INFO  EnterToCabinetServlet:15627 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:44:09 INFO  SessionAttributeListener:35542 - Attribute was deleted from Session
+2018-11-01 19:44:09 INFO  SessionAttributeListener:35588 - Attribute was deleted from Session
+2018-11-01 19:44:09 INFO  SessionAttributeListener:35591 - Attribute was deleted from Session
+2018-11-01 19:44:20 INFO  LoginServlet:46247 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:44:20 INFO  SessionAttributeListener:46355 - Attribute was added to Session
+2018-11-01 19:44:20 INFO  SessionAttributeListener:46363 - Attribute was added to Session
+2018-11-01 19:44:20 INFO  SessionAttributeListener:46365 - Attribute was added to Session
+2018-11-01 19:44:20 INFO  EnterToCabinetServlet:46374 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:44:20 INFO  EnterToCabinetServlet:46427 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:44:26 INFO  EnterToCabinetServlet:52483 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:44:27 INFO  EnterToCabinetServlet:52611 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:44:33 INFO  EnterToCabinetServlet:58790 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:44:33 INFO  EnterToCabinetServlet:58869 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:48:57 INFO  SessionAttributeListener:323298 - Attribute was deleted from Session
+2018-11-01 19:48:57 INFO  LogListener:323379 - ServletContext was destroyed
+2018-11-01 19:49:07 INFO  LogListener:0 - ServletContext just is initialized. Logging start out
+2018-11-01 19:49:08 INFO  CommonServlet:1239 - Servlet started
+2018-11-01 19:49:09 INFO  CommonServlet:2294 - Servlet finished
+2018-11-01 19:49:09 INFO  CommonServlet:2329 - Servlet started
+2018-11-01 19:49:09 INFO  CommonServlet:2335 - Servlet finished
+2018-11-01 19:49:09 INFO  CommonServlet:2462 - Servlet started
+2018-11-01 19:49:09 INFO  CommonServlet:2486 - Servlet finished
+2018-11-01 19:49:23 INFO  LoginServlet:15885 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:49:23 INFO  SessionAttributeListener:16163 - Attribute was added to Session
+2018-11-01 19:49:23 INFO  SessionAttributeListener:16207 - Attribute was added to Session
+2018-11-01 19:49:23 INFO  SessionAttributeListener:16211 - Attribute was added to Session
+2018-11-01 19:49:23 INFO  EnterToCabinetServlet:16227 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:24 INFO  EnterToCabinetServlet:16559 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:28 INFO  PutMoneyServlet:21032 - Started servlet com.jdbc.application.servlets.PutMoneyServlet
+2018-11-01 19:49:28 INFO  PutMoneyServlet:21182 - Finished servlet com.jdbc.application.servlets.PutMoneyServlet
+2018-11-01 19:49:28 INFO  EnterToCabinetServlet:21189 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:28 INFO  EnterToCabinetServlet:21271 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:31 INFO  SessionAttributeListener:24134 - Attribute was deleted from Session
+2018-11-01 19:49:31 INFO  SessionAttributeListener:24161 - Attribute was deleted from Session
+2018-11-01 19:49:31 INFO  SessionAttributeListener:24164 - Attribute was deleted from Session
+2018-11-01 19:49:42 INFO  LoginServlet:35075 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:49:42 INFO  SessionAttributeListener:35216 - Attribute was added to Session
+2018-11-01 19:49:42 INFO  SessionAttributeListener:35224 - Attribute was added to Session
+2018-11-01 19:49:42 INFO  EnterToCabinetServlet:35231 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:42 INFO  EnterToCabinetServlet:35427 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:57 INFO  EnterToCabinetServlet:49895 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:49:57 INFO  EnterToCabinetServlet:50003 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:50:02 INFO  SessionAttributeListener:54942 - Attribute was deleted from Session
+2018-11-01 19:50:02 INFO  SessionAttributeListener:55022 - Attribute was deleted from Session
+2018-11-01 19:50:05 INFO  LoginServlet:57590 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:50:05 INFO  LoginServlet:57832 - Finished servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:50:21 INFO  LoginServlet:74018 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 19:50:21 INFO  SessionAttributeListener:74155 - Attribute was added to Session
+2018-11-01 19:50:21 INFO  SessionAttributeListener:74162 - Attribute was added to Session
+2018-11-01 19:50:21 INFO  SessionAttributeListener:74164 - Attribute was added to Session
+2018-11-01 19:50:21 INFO  EnterToCabinetServlet:74176 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:50:21 INFO  EnterToCabinetServlet:74217 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:58:10 INFO  EnterToCabinetServlet:543315 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:58:10 INFO  EnterToCabinetServlet:543392 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 19:58:12 INFO  SessionAttributeListener:545056 - Attribute was deleted from Session
+2018-11-01 19:58:12 INFO  SessionAttributeListener:545147 - Attribute was deleted from Session
+2018-11-01 19:58:12 INFO  SessionAttributeListener:545151 - Attribute was deleted from Session
+2018-11-01 19:58:28 INFO  ValidRegDataFilter:561368 - Started filter com.jdbc.application.filters.ValidRegDataFilter
+2018-11-01 19:59:09 INFO  ValidRegDataFilter:602126 - Started filter com.jdbc.application.filters.ValidRegDataFilter
+2018-11-01 19:59:09 INFO  UserMatchFilter:602164 - Started filter com.jdbc.application.filters.UserMatchFilter
+2018-11-01 19:59:09 INFO  UserMatchFilter:602401 - Finished filter com.jdbc.application.filters.UserMatchFilter
+2018-11-01 19:59:09 INFO  ValidRegDataFilter:602406 - Finished filter com.jdbc.application.filters.ValidRegDataFilter
+2018-11-01 20:21:48 INFO  LogListener:1960787 - ServletContext was destroyed
+2018-11-01 20:21:59 INFO  LogListener:0 - ServletContext just is initialized. Logging start out
+2018-11-01 20:21:59 INFO  CommonServlet:866 - Servlet started
+2018-11-01 20:22:00 INFO  CommonServlet:1851 - Servlet finished
+2018-11-01 20:22:01 INFO  CommonServlet:1923 - Servlet started
+2018-11-01 20:22:01 INFO  CommonServlet:1927 - Servlet finished
+2018-11-01 20:22:01 INFO  CommonServlet:2011 - Servlet started
+2018-11-01 20:22:01 INFO  CommonServlet:2077 - Servlet finished
+2018-11-01 20:22:09 INFO  LoginServlet:10323 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-01 20:22:09 INFO  SessionAttributeListener:10561 - Attribute was added to Session
+2018-11-01 20:22:09 INFO  SessionAttributeListener:10582 - Attribute was added to Session
+2018-11-01 20:22:09 INFO  EnterToCabinetServlet:10590 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-01 20:22:09 INFO  EnterToCabinetServlet:10757 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 01:57:37 INFO  SessionAttributeListener:20138487 - Attribute was deleted from Session
+2018-11-02 01:57:37 INFO  SessionAttributeListener:20138656 - Attribute was deleted from Session
+2018-11-02 10:48:22 INFO  LogListener:51983060 - ServletContext was destroyed
+2018-11-02 11:07:32 INFO  LogListener:0 - ServletContext is just initialized. Logging start out
+2018-11-02 11:07:34 INFO  CommonServlet:1374 - Servlet started
+2018-11-02 11:07:35 INFO  CommonServlet:2898 - Servlet finished
+2018-11-02 11:07:35 INFO  CommonServlet:2991 - Servlet started
+2018-11-02 11:07:35 INFO  CommonServlet:2998 - Servlet finished
+2018-11-02 11:07:35 INFO  CommonServlet:3134 - Servlet started
+2018-11-02 11:07:35 INFO  CommonServlet:3155 - Servlet finished
+2018-11-02 11:07:41 INFO  LoginServlet:8316 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 11:07:41 INFO  LoginServlet:8783 - Finished servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 11:08:41 INFO  LoginServlet:68429 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 11:08:41 INFO  SessionAttributeListener:68565 - Attribute was added to Session
+2018-11-02 11:08:41 INFO  SessionAttributeListener:68579 - Attribute was added to Session
+2018-11-02 11:08:41 INFO  EnterToCabinetServlet:68588 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 11:08:41 INFO  EnterToCabinetServlet:68811 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 11:48:54 INFO  SessionAttributeListener:2481682 - Attribute was deleted from Session
+2018-11-02 11:48:54 INFO  SessionAttributeListener:2481702 - Attribute was deleted from Session
+2018-11-02 12:55:24 INFO  LogListener:6471551 - ServletContext was destroyed
+2018-11-02 12:55:38 INFO  LogListener:0 - ServletContext is just initialized. Logging start out
+2018-11-02 12:55:39 INFO  CommonServlet:1215 - Servlet started
+2018-11-02 12:55:40 INFO  CommonServlet:2282 - Servlet finished
+2018-11-02 12:55:40 INFO  CommonServlet:2303 - Servlet started
+2018-11-02 12:55:40 INFO  CommonServlet:2309 - Servlet finished
+2018-11-02 12:55:40 INFO  CommonServlet:2386 - Servlet started
+2018-11-02 12:55:40 INFO  CommonServlet:2411 - Servlet finished
+2018-11-02 12:55:58 INFO  LoginServlet:20761 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 12:55:59 INFO  SessionAttributeListener:21062 - Attribute was added to Session
+2018-11-02 12:55:59 INFO  SessionAttributeListener:21067 - Attribute was added to Session
+2018-11-02 12:55:59 INFO  EnterToCabinetServlet:21077 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 12:55:59 INFO  EnterToCabinetServlet:21233 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 12:56:18 INFO  EditJournalServlet:39840 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 12:58:13 INFO  SessionAttributeListener:155478 - Attribute was deleted from Session
+2018-11-02 12:58:13 INFO  LogListener:155497 - ServletContext was destroyed
+2018-11-02 12:58:23 INFO  LogListener:0 - ServletContext is just initialized. Logging start out
+2018-11-02 12:58:24 INFO  CommonServlet:1192 - Servlet started
+2018-11-02 12:58:25 INFO  CommonServlet:2239 - Servlet finished
+2018-11-02 12:58:25 INFO  CommonServlet:2273 - Servlet started
+2018-11-02 12:58:25 INFO  CommonServlet:2279 - Servlet finished
+2018-11-02 12:58:26 INFO  CommonServlet:2379 - Servlet started
+2018-11-02 12:58:26 INFO  CommonServlet:2385 - Servlet finished
+2018-11-02 12:58:50 INFO  LoginServlet:27270 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 12:58:51 INFO  SessionAttributeListener:27526 - Attribute was added to Session
+2018-11-02 12:58:51 INFO  SessionAttributeListener:27544 - Attribute was added to Session
+2018-11-02 12:58:51 INFO  EnterToCabinetServlet:27554 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 12:58:51 INFO  EnterToCabinetServlet:27746 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 12:59:07 INFO  EditJournalServlet:43462 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 12:59:07 INFO  EditJournalServlet:43549 - Finished servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 12:59:07 INFO  EnterToCabinetServlet:43557 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 12:59:07 INFO  EnterToCabinetServlet:43563 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 13:03:39 INFO  SessionAttributeListener:316315 - Attribute was deleted from Session
+2018-11-02 13:03:40 INFO  LogListener:316409 - ServletContext was destroyed
+2018-11-02 13:03:49 INFO  LogListener:0 - ServletContext is just initialized. Logging start out
+2018-11-02 13:03:51 INFO  CommonServlet:1246 - Servlet started
+2018-11-02 13:03:52 INFO  CommonServlet:2328 - Servlet finished
+2018-11-02 13:03:52 INFO  CommonServlet:2356 - Servlet started
+2018-11-02 13:03:52 INFO  CommonServlet:2375 - Servlet finished
+2018-11-02 13:03:52 INFO  CommonServlet:2435 - Servlet started
+2018-11-02 13:03:52 INFO  CommonServlet:2447 - Servlet finished
+2018-11-02 13:04:40 INFO  LoginServlet:50523 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 13:04:40 INFO  SessionAttributeListener:50791 - Attribute was added to Session
+2018-11-02 13:04:40 INFO  SessionAttributeListener:50806 - Attribute was added to Session
+2018-11-02 13:04:40 INFO  EnterToCabinetServlet:50817 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 13:04:40 INFO  EnterToCabinetServlet:50960 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 13:08:08 INFO  EditJournalServlet:258689 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 13:38:28 INFO  SessionAttributeListener:2078699 - Attribute was deleted from Session
+2018-11-02 13:38:28 INFO  SessionAttributeListener:2078814 - Attribute was deleted from Session
+2018-11-02 15:22:51 INFO  LogListener:8341420 - ServletContext was destroyed
+2018-11-02 15:23:09 INFO  LogListener:1 - ServletContext is just initialized. Logging start out
+2018-11-02 15:23:11 INFO  CommonServlet:2132 - Servlet started
+2018-11-02 15:23:13 INFO  CommonServlet:3759 - Servlet finished
+2018-11-02 15:23:13 INFO  CommonServlet:3810 - Servlet started
+2018-11-02 15:23:13 INFO  CommonServlet:3818 - Servlet finished
+2018-11-02 15:23:13 INFO  CommonServlet:4177 - Servlet started
+2018-11-02 15:23:13 INFO  CommonServlet:4197 - Servlet finished
+2018-11-02 15:23:25 INFO  LoginServlet:15957 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 15:23:26 INFO  SessionAttributeListener:16456 - Attribute was added to Session
+2018-11-02 15:23:26 INFO  SessionAttributeListener:16477 - Attribute was added to Session
+2018-11-02 15:23:26 INFO  EnterToCabinetServlet:16495 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:23:26 INFO  EnterToCabinetServlet:16856 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:23:38 INFO  EditJournalServlet:29185 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 15:25:12 INFO  SessionAttributeListener:123011 - Attribute was deleted from Session
+2018-11-02 15:25:12 INFO  LogListener:123101 - ServletContext was destroyed
+2018-11-02 15:25:33 INFO  LogListener:0 - ServletContext is just initialized. Logging start out
+2018-11-02 15:25:36 INFO  CommonServlet:2410 - Servlet started
+2018-11-02 15:25:38 INFO  CommonServlet:4778 - Servlet finished
+2018-11-02 15:25:38 INFO  CommonServlet:4870 - Servlet started
+2018-11-02 15:25:38 INFO  CommonServlet:4878 - Servlet finished
+2018-11-02 15:25:38 INFO  CommonServlet:4982 - Servlet started
+2018-11-02 15:25:38 INFO  CommonServlet:5014 - Servlet finished
+2018-11-02 15:25:51 INFO  LoginServlet:17530 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 15:25:51 INFO  SessionAttributeListener:18029 - Attribute was added to Session
+2018-11-02 15:25:51 INFO  SessionAttributeListener:18067 - Attribute was added to Session
+2018-11-02 15:25:51 INFO  EnterToCabinetServlet:18135 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:25:52 INFO  EnterToCabinetServlet:18596 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:26:11 INFO  EditJournalServlet:37286 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 15:37:35 INFO  SessionAttributeListener:721273 - Attribute was deleted from Session
+2018-11-02 15:37:35 INFO  LogListener:721348 - ServletContext was destroyed
+2018-11-02 15:37:58 INFO  LogListener:0 - ServletContext is just initialized. Logging start out
+2018-11-02 15:38:00 INFO  CommonServlet:2341 - Servlet started
+2018-11-02 15:38:03 INFO  CommonServlet:4745 - Servlet finished
+2018-11-02 15:38:03 INFO  CommonServlet:4772 - Servlet started
+2018-11-02 15:38:03 INFO  CommonServlet:4779 - Servlet finished
+2018-11-02 15:38:03 INFO  CommonServlet:4922 - Servlet started
+2018-11-02 15:38:03 INFO  CommonServlet:4943 - Servlet finished
+2018-11-02 15:38:22 INFO  LoginServlet:24140 - Started servlet com.jdbc.application.servlets.LoginServlet
+2018-11-02 15:38:22 INFO  SessionAttributeListener:24661 - Attribute was added to Session
+2018-11-02 15:38:23 INFO  SessionAttributeListener:24698 - Attribute was added to Session
+2018-11-02 15:38:23 INFO  EnterToCabinetServlet:24732 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:38:23 INFO  EnterToCabinetServlet:25131 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:38:32 INFO  EditJournalServlet:33719 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 15:38:32 INFO  EditJournalServlet:33862 - Finished servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 15:38:32 INFO  EnterToCabinetServlet:33933 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:38:32 INFO  EnterToCabinetServlet:33962 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:38:42 INFO  EditJournalServlet:43863 - Started servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 15:38:42 INFO  EditJournalServlet:43996 - Finished servlet com.jdbc.application.servlets.EditJournalServlet
+2018-11-02 15:38:42 INFO  EnterToCabinetServlet:44019 - Started servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:38:42 INFO  EnterToCabinetServlet:44026 - Finished servlet com.jdbc.application.servlets.EnterToCabinetServlet
+2018-11-02 15:40:00 INFO  SortServlet:121888 - Started servlet com.jdbc.application.servlets.SortServlet
+2018-11-02 15:40:00 INFO  SortServlet:122143 - Finished servlet com.jdbc.application.servlets.SortServlet
+2018-11-02 15:40:27 INFO  SortServlet:148885 - Started servlet com.jdbc.application.servlets.SortServlet
+2018-11-02 15:40:27 INFO  SortServlet:148988 - Finished servlet com.jdbc.application.servlets.SortServlet
+2018-11-02 15:41:37 INFO  CommonServlet:219559 - Servlet started
+2018-11-02 15:41:37 INFO  CommonServlet:219631 - Servlet finished
+2018-11-02 15:43:58 INFO  SortServlet:360549 - Started servlet com.jdbc.application.servlets.SortServlet
+2018-11-02 15:43:59 INFO  SortServlet:360803 - Finished servlet com.jdbc.application.servlets.SortServlet
