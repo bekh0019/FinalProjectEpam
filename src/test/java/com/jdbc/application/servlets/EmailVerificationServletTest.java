@@ -45,4 +45,8 @@ public class EmailVerificationServletTest {
         verify(req, times(1)).getRequestDispatcher(anyString());
         verify(dispatcher, times(1)).forward(req, resp);
     }
+    @Test(expected = NullPointerException.class)
+    public void testDoGetException() throws ServletException, IOException {
+        servlet.doGet(null, null);
+    }
 }
