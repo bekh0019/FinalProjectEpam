@@ -7,31 +7,32 @@
     <link href="${contextPath}css/bootstrap.min.css" rel="stylesheet">
     <link href="${contextPath}css/common.css" rel="stylesheet">
 </head>
+<%--suppress Annotator --%>
 <body>
 <div class="container">
 
     <form method="GET" action="${contextPath}/enterToCabinet" class="form-signin">
         <div class="form-group">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Go back to personal cabinet</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">${localeBean.back} ${localeBean.cabinet1}</button>
         </div>
     </form>
 
-    <h4 class="text-center">List of all journals</h4>
+    <h4 class="text-center">${localeBean.list1} ${localeBean.journals1}</h4>
     <div align="center">
         <table class="tg">
             <tr>
-                <th>Journal</th>
-                <th>Delete</th>
-                <th>Edit</th>
+                <th>${localeBean.journals}</th>
+                <th>${localeBean.delete}</th>
+                <th>${localeBean.edit}</th>
             </tr>
             <c:forEach items="${journals}" var="journal" varStatus="status">
                 <tr valign="top">
                     <td>${journal.title}</td>
                     <td>
-                        <a href="${pageContext.servletContext.contextPath}/deleteJournal?id=${journal.id}">Delete</a>
+                        <a href="${pageContext.servletContext.contextPath}/deleteJournal?id=${journal.id}">${localeBean.delete}</a>
                     </td>
                     <td>
-                        <a href="${pageContext.servletContext.contextPath}/editJournal?id=${journal.id}">Edit</a>
+                        <a href="${pageContext.servletContext.contextPath}/rootToEditJournal?id=${journal.id}">${localeBean.edit}</a>
                     </td>
                 </tr>
             </c:forEach>
@@ -39,7 +40,5 @@
     </div>
 
 </div>
-
-</form>
 </body>
 </html>

@@ -3,7 +3,7 @@ package com.jdbc.application.servlets;
 import com.jdbc.application.dao.CommonDao;
 import com.jdbc.application.dao.CommonDaoJdbc;
 import com.jdbc.application.dao.DBSystemException;
-import com.jdbc.application.dao.Reader;
+import com.jdbc.application.model.Reader;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

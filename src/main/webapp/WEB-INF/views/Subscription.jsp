@@ -12,23 +12,23 @@
 
     <form method="GET" action="${contextPath}/enterToCabinet" class="form-signin">
         <div class="form-group">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Go back to personal cabinet</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">${localeBean.back} ${localeBean.cabinet1}</button>
         </div>
     </form>
 
-    <h4 class="text-center">List of all available purchases</h4>
+    <h4 class="text-center">${localeBean.purchases}</h4>
     <div align="center">
         <table class="tg">
             <tr>
-                <th>Journal</th>
-                <th>Subscribe</th>
+                <th>${localeBean.journal1}</th>
+                <th>${localeBean.subscribe}</th>
             </tr>
             <c:forEach items="${journals}" var="journal" varStatus="status">
                 <tr valign="top">
                     <td>${journal.title}</td>
                     <td>
                         <c:if test = "${balance>=journal.price}">
-                            <a href="${pageContext.servletContext.contextPath}/subscribe?id=${journal.id}">Subscribe</a>
+                            <a href="${pageContext.servletContext.contextPath}/subscribe?id=${journal.id}">${localeBean.subscribe}</a>
                         </c:if>
                         <c:if test = "${balance<journal.price}">
                           Пополните баланс
@@ -40,7 +40,5 @@
     </div>
 
 </div>
-
-</form>
 </body>
 </html>

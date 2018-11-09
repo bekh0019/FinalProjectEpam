@@ -13,7 +13,7 @@
     |
     <a href="${contextPath}/changeLocale?lang=ru">ru</a>
 </span>
-<h4 class="text-center">Welcome to the official website of the Journal's Catalog</h4>
+<h4 class="text-center">${localeBean.welcome}</h4>
 <div class="container">
     <form method="POST" action="${contextPath}/createUser" class="form-signin" accept-charset="UTF-8">
         <div class="form-group">
@@ -21,13 +21,13 @@
             <input name="login" type="text" class="form-control" autofocus="true" />
             <h5 class="text-left">${localeBean.password}</h5>
             <input name="password" type="password" class="form-control" />
-            <h5 class="text-left">Name</h5>
+            <h5 class="text-left">${localeBean.name}</h5>
             <input name="name" type="text" class="form-control" />
-            <h5 class="text-left">Surname</h5>
+            <h5 class="text-left">${localeBean.surname}</h5>
             <input name="surname" type="text" class="form-control" />
-            <h5 class="text-left">Email</h5>
+            <h5 class="text-left">${localeBean.email}</h5>
             <input name="email" type="text" class="form-control" />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">${localeBean.submit}</button>
         </div>
 
     </form>

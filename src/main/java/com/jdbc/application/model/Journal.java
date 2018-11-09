@@ -1,8 +1,12 @@
-package com.jdbc.application.dao;
+package com.jdbc.application.model;
 
 import java.io.Serializable;
 import java.util.Objects;
-
+/**
+ * @author Bekh Artem
+ * Bean class,which implements Serializable to work safety
+ * with Session
+ */
 public class Journal implements Serializable {
     private int id;
     private String title;

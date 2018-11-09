@@ -1,6 +1,12 @@
-package com.jdbc.application.dao;
+package com.jdbc.application.model;
 
-public enum  Role {
+import java.io.Serializable;
+
+/**
+ * @author Bekh Artem
+ * class enum for Roles
+ */
+public enum  Role implements Serializable {
     Admin,Reader;
 
     @Override

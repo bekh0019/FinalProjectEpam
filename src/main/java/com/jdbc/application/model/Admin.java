@@ -1,16 +1,19 @@
-package com.jdbc.application.dao;
+package com.jdbc.application.model;
 
-import com.jdbc.application.service.JdbcUtils;
+import java.io.Serializable;
 
-import java.sql.*;
-import java.util.Objects;
-import java.util.Set;
-
-public class Admin   {
+/**
+ * @author Bekh Artem
+ * Bean class,which implements Serializable to work safety
+ * with Session
+ */
+public class Admin implements Serializable {
     private int id;
     private String login;
     private String password;
 
+    public Admin() {
+    }
 
     public Admin(int id, String login, String password) {
         this.id = id;

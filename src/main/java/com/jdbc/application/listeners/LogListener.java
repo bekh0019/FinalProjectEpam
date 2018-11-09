@@ -15,7 +15,8 @@ import java.util.ResourceBundle;
 /**
  * The Listener that launches the logging process using Log4J.
  * The logging process start out when {@link ServletContext} is initialized.
- * @author Bekh A
+ * Set english default localization.
+ * @author Bekh Artem
  */
 public class LogListener implements ServletContextListener {
 private static final String DEFAULT_LOCALE="en";

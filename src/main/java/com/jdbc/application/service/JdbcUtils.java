@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * Утилитарные методы для dao
+ * Util methods for DAO layer
  */
 public final class JdbcUtils {
 

@@ -1,11 +1,19 @@
 package com.jdbc.application.dao;
 
+import com.jdbc.application.model.Admin;
+import com.jdbc.application.model.Journal;
+import com.jdbc.application.model.Reader;
 import com.jdbc.application.service.JdbcUtils;
 
 import java.sql.*;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author Bekh Artem
+ * class implements all methods from CommonDao
+ * and extends AbstractDaoJdbc to get connection with DB
+ */
 public class CommonDaoJdbc extends AbstractDaoJdbc implements CommonDao {
     //////////////QUERIES//////////////////
     private static final String SELECT_ALL_JOURNALS_BY_TITLE_ALPHABETIC="SELECT * FROM journal AS j ORDER BY j.title ASC";
@@ -106,7 +114,7 @@ public class CommonDaoJdbc extends AbstractDaoJdbc implements CommonDao {
     }
 
     @Override
-    public Admin selectAdmin(String login,String password) throws SQLException, DBSystemException {
+    public Admin selectAdmin(String login, String password) throws SQLException, DBSystemException {
         Connection conn=getSerializableConnection();
         PreparedStatement st=null;
         ResultSet rs=null;

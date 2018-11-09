@@ -1,8 +1,14 @@
 package com.jdbc.application.dao;
 
+import com.jdbc.application.model.Reader;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+/**
+ * @author Bekh Artem
+ * Here is an implementation of method extract
+ * @see com.jdbc.application.dao.AbstractReaderExtractor
+ */
 public class ReaderExtractor extends AbstractReaderExtractor {
     @Override
     public Reader extract(ResultSet rs) throws SQLException {

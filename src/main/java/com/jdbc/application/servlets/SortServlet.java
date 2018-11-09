@@ -1,6 +1,7 @@
 package com.jdbc.application.servlets;
 
 import com.jdbc.application.dao.*;
+import com.jdbc.application.model.Journal;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -8,11 +9,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Set;
 
 public class SortServlet extends HttpServlet {
     private static final String NAME = SortServlet.class.getName();
@@ -22,13 +21,9 @@ public class SortServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LOGGER.info(String.format("%s%s", "Started servlet ", NAME));
         CommonDao commonDao = new CommonDaoJdbc();
-        HttpSession session = req.getSession(false);
         List<String> topics=null;
         List<Journal> journals=null;
-        List<Journal> prices=null;
-        Journal searchedJournal=null;
         String topic=req.getParameter("by");
-        System.out.println(topic);
         try {
             topics=   commonDao.selectDistinctTopics();
            journals=commonDao.selectJournalByTitle(req.getParameter("title"));
@@ -48,9 +43,6 @@ public class SortServlet extends HttpServlet {
             }
             else if (req.getParameter("sorting").equals("no")){
                 journals  = commonDao.selectAllJournalsByTopicWithoutSorting(topic);
-                for (Journal journal:journals){
-                    System.out.println(journal.getTopic());
-                }
             } else if (req.getParameter("sorting").equals("AZ")){
                 journals  = commonDao.selectAllJournalsByTopicSortingAlphabetic(topic);
             } else if (req.getParameter("sorting").equals("ZA")){
@@ -64,17 +56,13 @@ public class SortServlet extends HttpServlet {
 
 
 
-        catch (DBSystemException e) {
-            e.printStackTrace();
-        }
-        catch (SQLException e) {
+        catch (DBSystemException | SQLException e) {
             e.printStackTrace();
         }
 
 
         req.setAttribute("journals", journals);
         req.setAttribute("topics", topics);
-        req.setAttribute("searchedJournal", searchedJournal);
         RequestDispatcher dispatcher = req.getRequestDispatcher(String.format("%s%s", req.getContextPath(), "/all"));
         dispatcher.forward(req, resp);
 

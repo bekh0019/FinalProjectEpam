@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Класс, позволяющий считать файл .properties и в нём по ключу считать значение
+ * @author Bekh Artem
+ * Singleton(not lazy) which provides access to .properties
+ * and get value by the key
  */
 public class Settings {
     private static final Settings INSTANCE = new Settings();

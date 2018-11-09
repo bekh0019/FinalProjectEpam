@@ -11,10 +11,14 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * @author Bekh Artem
+ * Filter validate login,email,password using regex.
+ */
 public class ValidRegDataFilter extends BaseFilter {
     private static final String name = ValidRegDataFilter.class.getName();
     private static final Logger logger = Logger.getLogger(name);
-    Boolean matchFound = false;
+    private Boolean matchFound = false;
     @Override
     public void doFilter(HttpServletRequest req, HttpServletResponse resp, FilterChain filterChain) throws IOException, ServletException {
         logger.info(String.format("%s%s", "Started filter ", name));
@@ -27,16 +31,21 @@ public class ValidRegDataFilter extends BaseFilter {
         Matcher matcher=pattern.matcher(login);
         Pattern pattern1=Pattern.compile("([a-zA-z]+)@([a-zA-Z]+)\\.([a-zA-Z]+)");
         Matcher matcher1=pattern1.matcher(email);
-        if (surname.length() <= 2 || nameUser.length()<=2 || password.length()<=2){
-            RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/ErrorLogging.jsp");
+        Pattern pattern2=Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$");
+        Matcher matcher2=pattern2.matcher(password);
+        //(?=.*[0-9])       <== digit must occur at least once
+        //(?=\S+$)          <== no whitespace allowed in the entire string
+        //.{8,}             <== anything, at least eight places though
+        if (surname.length() < 2 || nameUser.length()<2){
+            RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/errors/ErrorLogging.jsp");
             dispatcher.forward(req, resp);
         }
-        if (matcher.find()&&matcher1.find()){
+        if (matcher.find()&&matcher1.find()&&matcher2.find()){
             matchFound=true;
             filterChain.doFilter(req, resp);
         }
       else if(!matchFound){
-            RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/IncorrectLoginOrEmail.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/errors/IncorrectLoginOrEmail.jsp");
             dispatcher.forward(req, resp);
         }
         else {

@@ -8,7 +8,7 @@
     <link href="${contextPath}css/common.css" rel="stylesheet">
 </head>
 <body>
-<h3>На ваш электронный ящик был выслан email с подтверждением регистрации!</h3>
+<h3>${localeBean.confirm}</h3>
 </body>
 </html>
 

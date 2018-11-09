@@ -10,11 +10,11 @@ import java.io.IOException;
  * and {@link Filter#destroy()} and casts arguments
  * of method {@link Filter#doFilter(ServletRequest, ServletResponse, FilterChain)} to
  * {@link HttpServletRequest} and {@link HttpServletResponse}.
- * @author Bekh A
+ * @author Bekh Artem
  */
-public abstract class BaseFilter implements Filter {
+abstract class BaseFilter implements Filter {
 
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
          /*NOP*/
     }
 
@@ -25,7 +25,7 @@ public abstract class BaseFilter implements Filter {
         doFilter(req, resp, filterChain);
     }
 
-    public abstract void doFilter(HttpServletRequest servletRequest, HttpServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException;
+    protected abstract void doFilter(HttpServletRequest servletRequest, HttpServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException;
 
     public void destroy() {
          /*NOP*/

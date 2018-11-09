@@ -1,6 +1,7 @@
 package com.jdbc.application.servlets;
 
 import com.jdbc.application.dao.*;
+import com.jdbc.application.model.Journal;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,8 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Set;
-
+/**
+ * @author Bekh Artem
+ * this Servlet has service function. It helps
+ * to display all available Journals on .jsp page
+ */
 public class RootToListJournalServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

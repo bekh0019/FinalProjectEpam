@@ -1,14 +1,23 @@
 package com.jdbc.application.dao;
 
+import com.jdbc.application.model.Admin;
+import com.jdbc.application.model.Journal;
+import com.jdbc.application.model.Reader;
+
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author Bekh Artem
+ * interface with all DAO methods used in this
+ * application
+ */
 public interface CommonDao {
      Set<Reader> selectAllReaders() throws SQLException, DBSystemException;
     Reader selectReader(String login,String password) throws SQLException, DBSystemException;
      Reader selectReaderById(int id) throws SQLException, DBSystemException;
-     Admin selectAdmin(String login,String password) throws SQLException, DBSystemException;
+     Admin selectAdmin(String login, String password) throws SQLException, DBSystemException;
      List<Journal> selectAllJournalsByTitleAlphabetic() throws SQLException, DBSystemException;
      List<Journal> selectAllJournalsByTitleReverse() throws SQLException, DBSystemException;
      List <Journal> selectAllJournalsByPriceToBigger() throws SQLException, DBSystemException;

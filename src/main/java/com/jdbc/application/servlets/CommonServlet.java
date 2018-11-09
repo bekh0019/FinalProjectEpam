@@ -10,27 +10,32 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *
+ *This servlet is responsible
+ * for display page Main. When application
+ * starts this doGet is used.
  * @author Bekh A
  */
 public class CommonServlet extends HttpServlet {
-    private static final Logger LOGGER = Logger.getLogger(CommonServlet.class.getName());
+    private static final String NAME = CommonServlet.class.getName();
+    private Logger logger;
+    @Override
+    public void init() {
+        logger = Logger.getLogger(NAME);
+    }
+
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setCharacterEncoding("UTF-8"); // кодировка ответа
-        req.setCharacterEncoding("UTF-8");
-      //  super.doPost(req, resp);
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doPost (req, resp);
-        LOGGER.info("Servlet started");
+        logger.info(String.format("%s%s", "Started servlet ", NAME));
         RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/Main.jsp");
         dispatcher.forward(req, resp);
-        LOGGER.info("Servlet finished");
-
-
+        logger.info("Servlet finished");
     }
 }

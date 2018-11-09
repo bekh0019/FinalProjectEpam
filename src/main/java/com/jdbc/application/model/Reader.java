@@ -1,11 +1,14 @@
-package com.jdbc.application.dao;
+package com.jdbc.application.model;
 
-import com.jdbc.application.service.JdbcUtils;
 
-import java.sql.*;
-import java.util.Objects;
 
-public class Reader extends CommonDaoJdbc implements Comparable<Reader> {
+import java.io.Serializable;
+/**
+ * @author Bekh Artem
+ * Bean class,which implements Serializable to work safety
+ * with Session
+ */
+public class Reader implements Comparable<Reader>, Serializable {
     private int id;
     private String name;
     private String surname;
@@ -109,7 +112,8 @@ return this.id-o.id;
     }
 
 
-
-
-
+    @Override
+    public String toString() {
+        return "reader";
+    }
 }

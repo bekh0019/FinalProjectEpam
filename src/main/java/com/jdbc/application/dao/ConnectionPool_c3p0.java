@@ -10,13 +10,11 @@ import java.sql.SQLException;
 
 /**
  * Standard Connection Pool c3p0 for dao layer and the case using MySQL database.
- * The pattern Singleton is used.
  * @author Bekh Artem
  */
 public class ConnectionPool_c3p0 implements ConnectionFactory {
 
     private final DataSource dataSource;
-    private final Settings settings = Settings.getInstance();
 
     public Connection newConnection() throws SQLException {
         return dataSource.getConnection();
@@ -29,6 +27,7 @@ public class ConnectionPool_c3p0 implements ConnectionFactory {
     public ConnectionPool_c3p0() {
         try{
             ComboPooledDataSource cpds = new ComboPooledDataSource();
+            Settings settings = Settings.getInstance();
             cpds.setDriverClass(settings.value("jdbc.driver_class"));
             cpds.setJdbcUrl(settings.value("jdbc.url"));
             cpds.setUser(settings.value("jdbc.username"));

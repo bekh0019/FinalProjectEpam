@@ -12,41 +12,41 @@
 
     <form method="GET" action="${contextPath}/enterToCabinet" class="form-signin">
         <div class="form-group">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Go back to personal cabinet</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">${localeBean.back} ${localeBean.cabinet1}</button>
         </div>
     </form>
 
-    <h4 class="text-center">List of all readers</h4>
+    <h4 class="text-center">${localeBean.list1} ${localeBean.readers}</h4>
     <div align="center">
         <table class="tg">
             <tr>
-                <th>Reader</th>
-                <th>Access</th>
-                <th>Block/Unblock</th>
-                <th>Unverified Balance</th>
+                <th>${localeBean.reader1}</th>
+                <th>${localeBean.access}</th>
+                <th>${localeBean.block}</th>
+                <th>${localeBean.balance}</th>
             </tr>
             <c:forEach items="${readers}" var="reader" varStatus="status">
                 <tr valign="top">
                     <td>${reader.surname} ${reader.name}</td>
                     <td>
                         <c:if test = "${reader.access == true}">
-                            active
+                            ${localeBean.active}
                         </c:if>
                         <c:if test = "${reader.access == false}">
-                            blocked
+                            ${localeBean.blocked}
                         </c:if>
                     </td>
                     <td>
                         <c:if test = "${reader.access == true}">
-                            <a href="${pageContext.servletContext.contextPath}/blockReader?id=${reader.id}&block=true">Block</a>
+                            <a href="${pageContext.servletContext.contextPath}/blockReader?id=${reader.id}&block=true"> ${localeBean.block1}</a>
                         </c:if>
                         <c:if test = "${reader.access == false}">
-                            <a href="${pageContext.servletContext.contextPath}/blockReader?id=${reader.id}&block=false">Unblock</a>
+                            <a href="${pageContext.servletContext.contextPath}/blockReader?id=${reader.id}&block=false"> ${localeBean.unblock}</a>
                         </c:if>
                     </td>
                     <td>
                         <c:if test = "${reader.unverifiedBalance !=0}">
-                            <a href="${pageContext.servletContext.contextPath}/verifyBalance?id=${reader.id}">Verify</a>
+                            <a href="${pageContext.servletContext.contextPath}/verifyBalance?id=${reader.id}"> ${localeBean.verify}</a>
                         </c:if>
                     </td>
                 </tr>
@@ -56,6 +56,6 @@
 
 </div>
 
-</form>
+
 </body>
 </html>

@@ -201,6 +201,27 @@ Inc.//DTD Web Application 2.3//EN"
         <url-pattern>/subscribe</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>RootToCreateJournalServlet</servlet-name>
+        <servlet-class>
+            com.jdbc.application.servlets.RootToCreateJournalServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RootToCreateJournalServlet</servlet-name>
+        <url-pattern>/rootToCreateJournal</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RootToEditJournalServlet</servlet-name>
+        <servlet-class>
+            com.jdbc.application.servlets.RootToEditJournalServlet
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RootToEditJournalServlet</servlet-name>
+        <url-pattern>/rootToEditJournal</url-pattern>
+    </servlet-mapping>
+
 
 
 
@@ -225,19 +246,37 @@ Inc.//DTD Web Application 2.3//EN"
         <filter-name>CreateUserFilter</filter-name>
         <url-pattern>/createUser</url-pattern>
     </filter-mapping>
-   <filter>
-        <filter-name>FormEncodedFilter</filter-name>
+
+
+    <filter>
+        <filter-name>JournalFilter</filter-name>
         <filter-class>
-            com.jdbc.application.filters.FormEncodedFilter
+            com.jdbc.application.filters.JournalFilter
         </filter-class>
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>UTF-8</param-value>
-        </init-param>
     </filter>
     <filter-mapping>
-        <filter-name>FormEncodedFilter</filter-name>
-        <url-pattern>/*</url-pattern>
+        <filter-name>JournalFilter</filter-name>
+        <url-pattern>/createJournal</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>CreateJournalMatchFilter</filter-name>
+        <filter-class>
+            com.jdbc.application.filters.JournalMatchFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CreateJournalMatchFilter</filter-name>
+        <url-pattern>/createJournal</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>EditJournalFilter</filter-name>
+        <filter-class>
+            com.jdbc.application.filters.JournalFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EditJournalFilter</filter-name>
+        <url-pattern>/editJournal</url-pattern>
     </filter-mapping>
     <listener>
         <listener-class>com.jdbc.application.listeners.LogListener</listener-class>
@@ -255,5 +294,8 @@ Inc.//DTD Web Application 2.3//EN"
     <welcome-file-list>
         <welcome-file>Main.jsp</welcome-file>
     </welcome-file-list>
+
+
+
 
 </web-app>

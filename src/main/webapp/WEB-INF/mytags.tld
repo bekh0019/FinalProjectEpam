@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib>
+
+    <tlib-version>2.1</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>simple</short-name>
+    <uri>http://tomcat.apache.org/example-taglib</uri>
+
+    <tag>
+        <name>today</name>
+        <tag-class>com.jdbc.application.tagHandlers.MyTagHandler</tag-class>
+    </tag>
+</taglib>

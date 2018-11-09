@@ -1,6 +1,9 @@
 package com.jdbc.application.servlets;
 
 import com.jdbc.application.dao.*;
+import com.jdbc.application.model.Journal;
+import com.jdbc.application.model.Reader;
+import com.jdbc.application.model.Role;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -12,16 +15,38 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Set;
 
+/**
+ * @author Bekh Artem
+ * Servlet checks session atttribute role
+ * and redirect to Admin or Reader cabinet
+ * For Reader all his journals are selected.
+ * If he get to this servlet via PRG redirect from
+ * PutMoneyServlet then there is a varification of updating balance
+ * @see PutMoneyServlet
+ *
+ */
 public class EnterToCabinetServlet extends HttpServlet {
     private static final String name = EnterToCabinetServlet.class.getName();
-    private static final Logger logger = Logger.getLogger(name);
+    private  Logger logger;
+    private CommonDao commonDao;
+    @Override
+    public void init() {
+        commonDao = new CommonDaoJdbc();
+        logger = Logger.getLogger(name);
+    }
+
+    public void setCommonDao(CommonDao commonDao) {
+        this.commonDao = commonDao;
+    }
+
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         logger.info(String.format("%s%s", "Started servlet ", name));
-        CommonDao commonDao = new CommonDaoJdbc();
         HttpSession session = req.getSession(false);
         List<Journal> journals=null;
 
@@ -29,7 +54,7 @@ public class EnterToCabinetServlet extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/ErrorLogging.jsp");
             dispatcher.forward(req, resp);
         }
-        if(session.getAttribute("role") == Role.Reader && ((Reader) session.getAttribute("identity")).isAccess()){
+      else if(session.getAttribute("role").toString().equals((Role.Reader).toString()) && ((Reader) session.getAttribute("identity")).isAccess()){
             try {
                 journals=  commonDao.selectAllReaderJournal(((Reader)session.getAttribute("identity")).getId());
                 if ((Boolean) (session.getAttribute("money"))){

@@ -13,19 +13,35 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+/**
+ * @author Bekh Artem
+ * class get parameter lang from request and
+ * set localization to session attribute
+ * according to the value of parameter.
+ * Choosing localization is available at personal cabinet
+ * or on page Main
+ */
 public class ChangeLocaleServlet extends HttpServlet {
     private static final String NAME = ChangeLocaleServlet.class.getName();
-    private static final Logger LOGGER = Logger.getLogger(NAME);
+    private Logger logger;
+    @Override
+    public void init() {
+        logger = Logger.getLogger(NAME);
+
+    }
+
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        LOGGER.info(String.format("%s%s", "Started servlet ", NAME));
-
+        logger.info(String.format("%s%s", "Started servlet ", NAME));
+        Locale locale=Locale.getDefault();
         HttpSession session = req.getSession(false);
-
         String lang = req.getParameter("lang");
-        Locale locale = Locale.getDefault();
+        String page=req.getParameter("page");
         if(lang.equals("ru")){
             locale = new Locale("ru", "RU");
         }
@@ -34,17 +50,17 @@ public class ChangeLocaleServlet extends HttpServlet {
         }
         ResourceBundle rb = ResourceBundle.getBundle("messages", locale);
 
-        if(session == null || session.getAttribute("identity") == null){
-            req.setAttribute("localeBean", LocaleBean.localBeanBuilder(rb, locale));
-            RequestDispatcher dispatcher = req.getRequestDispatcher(String.format("%s%s", req.getContextPath(), "/all"));
+        if(page.equals("main")){
+            session.setAttribute("localeBean", LocaleBean.localBeanBuilder(rb, locale));
+            RequestDispatcher dispatcher = req.getRequestDispatcher(String.format("%s%s", req.getContextPath(), "/Main.jsp"));
             dispatcher.forward(req, resp);
         }
-        else{
+        else if(page.equals("cabinet")){
             session.setAttribute("localeBean", LocaleBean.localBeanBuilder(rb, locale));
             RequestDispatcher dispatcher = req.getRequestDispatcher(String.format("%s%s", req.getContextPath(), "/enterToCabinet"));
             dispatcher.forward(req, resp);
         }
 
-        LOGGER.info(String.format("%s%s", "Finished servlet ", NAME));
+        logger.info(String.format("%s%s", "Finished servlet ", NAME));
     }
 }

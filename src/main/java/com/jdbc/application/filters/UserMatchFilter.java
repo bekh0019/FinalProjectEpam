@@ -2,6 +2,8 @@
 package com.jdbc.application.filters;
 
 import com.jdbc.application.dao.*;
+import com.jdbc.application.model.Admin;
+import com.jdbc.application.model.Reader;
 import org.apache.log4j.Logger;
 
 import javax.servlet.FilterChain;
@@ -12,7 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Set;
-
+/**
+ * @author Bekh Artem
+ * Filter checks all Readers in DB
+ * before inserting new one to avoid duplicates
+ */
 public class UserMatchFilter extends BaseFilter {
     private static final String name = UserMatchFilter.class.getName();
     private static final Logger logger = Logger.getLogger(name);
@@ -24,7 +30,7 @@ public class UserMatchFilter extends BaseFilter {
        CommonDao commonDao = new CommonDaoJdbc();
         Set<Reader> allReaders = null;
         Admin admin = null;
-        Boolean matchFound = false;
+        boolean matchFound = false;
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         String email = req.getParameter("email");

@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Not all fields in DB found</title>
+    <link href="${contextPath}css/bootstrap.min.css" rel="stylesheet">
+    <link href="${contextPath}css/common.css" rel="stylesheet">
 </head>
 <body>
 <h3>Please fill in all required fields!</h3>

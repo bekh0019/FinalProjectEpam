@@ -11,13 +11,13 @@
 <div class="container">
     <form method="POST" action="${contextPath}/editJournal?id_journal=${journal.id}" class="form-signin" accept-charset="UTF-8">
         <div class="form-group">
-            <h5 class="text-left">Title</h5>
+            <h5 class="text-left">${localeBean.title}</h5>
             <input name="title" value="${journal.title}" type="text" class="form-control" />
-            <h5 class="text-left">Topic</h5>
+            <h5 class="text-left">${localeBean.topic}</h5>
             <input name="topic" value="${journal.topic}" type="text" class="form-control" />
-            <h5 class="text-left">Price</h5>
+            <h5 class="text-left">${localeBean.price}</h5>
             <input name="price" value="${journal.price}" type="text" class="form-control" />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">${localeBean.submit}</button>
 
         </div>
 

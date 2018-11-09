@@ -1,4 +1,4 @@
-package com.jdbc.application.dao;
+package com.jdbc.application.model;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -10,8 +10,15 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+
+/**
+ * @author Bekh Artem
+ * class for sending mail via gmail
+ * message is a variable for header of the letter
+ * text is a variable for context
+ */
 public class Report {
-    public  void sendMail(String message) {
+    public  void sendMail(String message,String text) {
         //Setting up configurations for the email connection to the Google SMTP server using TLS
         Properties props = new Properties();
         props.put("mail.smtp.host", "true");
@@ -38,11 +45,10 @@ public class Report {
             String timeStamp = new SimpleDateFormat("yyyymmdd_hh-mm-ss").format(new Date());
             msg.setSubject(message);
             msg.setSentDate(new Date());
-            msg.setText("http://localhost:8080/emailVerification");
+            msg.setText(text);
 
             msg.setHeader("XPriority", "1");
             Transport.send(msg);
-            System.out.println("Mail has been sent successfully");
         } catch (MessagingException mex) {
             System.out.println("Unable to send an email" + mex);
         }

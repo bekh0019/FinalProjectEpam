@@ -2,6 +2,9 @@
 package com.jdbc.application.servlets;
 
 import com.jdbc.application.dao.*;
+import com.jdbc.application.model.Admin;
+import com.jdbc.application.model.Reader;
+import com.jdbc.application.model.Role;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -15,20 +18,31 @@ import java.sql.SQLException;
 
 public class LoginServlet extends HttpServlet {
     private static final String name = LoginServlet.class.getName();
-    private static final Logger logger = Logger.getLogger(name);
+    private  Logger logger;
+    private CommonDao commonDao;
+    @Override
+    public void init() {
+        commonDao = new CommonDaoJdbc();
+        logger = Logger.getLogger(name);
+    }
+
+    public void setCommonDao(CommonDao commonDao) {
+        this.commonDao = commonDao;
+    }
+
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info(String.format("%s%s", "Started servlet ", name));
-        CommonDao commonDao = new CommonDaoJdbc();
         Reader reader = null;
         Admin admin = null;
 
         try {
             reader = commonDao.selectReader(req.getParameter("login"), req.getParameter("password"));
-        } catch (DBSystemException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (DBSystemException | SQLException e) {
             e.printStackTrace();
         }
 
@@ -43,9 +57,7 @@ public class LoginServlet extends HttpServlet {
 
         try {
             admin = commonDao.selectAdmin(req.getParameter("login"),req.getParameter("password"));
-        } catch (DBSystemException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (DBSystemException | SQLException e) {
             e.printStackTrace();
         }
 
