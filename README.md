@@ -9,7 +9,7 @@ Technologies:
 - Servlet API
 - JSP
 - CSS,Bootstrap
-- MySQL or PostgreSQL (separately in two branches);
+- MySQL or Apache Derby (separately in two branches);
 - Logging: Log4J;
 - Custom tags: tag library and tag file
 - Mail: Java Mail API
