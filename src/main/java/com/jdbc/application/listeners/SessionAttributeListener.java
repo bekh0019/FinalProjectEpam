@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSessionBindingEvent;
 /**
  * The Listener that writes into log when {@link HttpSessionBindingEvent} happens
  * and attributed is added or deleted to/from Session.
- * @author Bekh A
+ * @author Bekh Artem
  */
 public class SessionAttributeListener implements HttpSessionAttributeListener {
 

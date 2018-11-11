@@ -37,14 +37,14 @@ public class ForAllServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         logger.info(String.format("%s%s", "Started servlet ", name));
-        HttpSession session=req.getSession(false);
+    /*    HttpSession session=req.getSession(false);
         if (session!=null) {
             req.setAttribute("identity", session.getAttribute("identity"));
         }
         LocaleBean localeBean= (LocaleBean) req.getAttribute("localeBean");
         if(!(localeBean==null)){
             req.setAttribute("localeBean",localeBean);
-        }
+        }*/
         RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/PageForAll.jsp");
         dispatcher.forward(req, resp);
         logger.info(String.format("%s%s", "Finished servlet ", name));
@@ -61,14 +61,14 @@ public class ForAllServlet extends HttpServlet {
         } catch (SQLException | DBSystemException e) {
             e.printStackTrace();
         }
-        HttpSession session=req.getSession(false);
+     /*   HttpSession session=req.getSession(false);
         if (session!=null) {
             req.setAttribute("identity", session.getAttribute("identity"));
         }
       LocaleBean localeBean= (LocaleBean) req.getAttribute("localeBean");
         if(!(localeBean==null)){
             req.setAttribute("localeBean",localeBean);
-        }
+        }*/
         req.setAttribute("topics",topics);
         req.setAttribute("journals",journals);
         RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/PageForAll.jsp");

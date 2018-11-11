@@ -14,6 +14,11 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * servlet update Reader's unverifiedBalance
+ * column in DB. To verify balance
+ * @see VerifyBalanceServlet
+ */
 @WebServlet("/putmoney")
 public class PutMoneyServlet extends HttpServlet {
     private static final String NAME = PutMoneyServlet.class.getName();

@@ -31,7 +31,7 @@
                             <a href="${pageContext.servletContext.contextPath}/subscribe?id=${journal.id}">${localeBean.subscribe}</a>
                         </c:if>
                         <c:if test = "${balance<journal.price}">
-                          Пополните баланс
+                            <a href="${pageContext.servletContext.contextPath}/enterToCabinet">${localeBean.balance1}</a>
                         </c:if>
                     </td>
                 </tr>

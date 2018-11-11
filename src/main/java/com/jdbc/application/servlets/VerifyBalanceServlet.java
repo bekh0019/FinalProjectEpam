@@ -11,6 +11,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * @author Bekh Artem
+ * Admin verify Reader's balance
+ * verification email sent to Reader's mailbox
+ * Servlet contains implementation
+ * of dao method with transaction
+ */
 public class VerifyBalanceServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -12,6 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * @author Bekh Artem
+ * servlet delete session for
+ * the current role
+ */
 public class LogOutServlet extends HttpServlet {
     private static final String name = LogOutServlet.class.getName();
     private Logger logger;

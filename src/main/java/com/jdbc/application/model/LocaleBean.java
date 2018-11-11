@@ -85,6 +85,15 @@ public class LocaleBean implements Serializable {
     private String confirm;
     private String welcome;
     private String current;
+    private String balance1;
+
+    public String getBalance1() {
+        return balance1;
+    }
+
+    public void setBalance1(String balance1) {
+        this.balance1 = balance1;
+    }
 
     public String getCurrent() {
         return current;
@@ -784,6 +793,7 @@ localeBean.setName(rb.getString("name"));
 localeBean.setSurname(rb.getString("surname"));
 localeBean.setEmail(rb.getString("email"));
 localeBean.setCurrent(rb.getString("current"));
+localeBean.setBalance1(rb.getString("balance1"));
 
         return localeBean;
     }

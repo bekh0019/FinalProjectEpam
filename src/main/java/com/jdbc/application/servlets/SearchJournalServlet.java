@@ -15,6 +15,13 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * @author Bekh Artem
+ * servlet for searching Journal
+ * by title,List used to display
+ * searched journal at the same table
+ * on .jsp page
+ */
 public class SearchJournalServlet extends HttpServlet {
     private static final String NAME = SearchJournalServlet.class.getName();
     private static final Logger LOGGER = Logger.getLogger(NAME);

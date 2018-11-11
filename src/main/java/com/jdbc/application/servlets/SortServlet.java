@@ -13,6 +13,13 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ * @author Bekh Artem
+ * servlet can display all journals
+ * with searched topic and sort them alphabeticly
+ * or by price
+ * servlet can do the same with all Journals
+ */
 public class SortServlet extends HttpServlet {
     private static final String NAME = SortServlet.class.getName();
     private static final Logger LOGGER = Logger.getLogger(NAME);

@@ -16,6 +16,12 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * @author Bekh Artem
+ * Servlet get credentials from request,
+ * try to find Admin or Reader with the same credentials
+ * and create session for this current user
+ */
 public class LoginServlet extends HttpServlet {
     private static final String name = LoginServlet.class.getName();
     private  Logger logger;

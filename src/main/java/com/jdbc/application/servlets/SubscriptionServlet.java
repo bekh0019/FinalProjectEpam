@@ -13,7 +13,15 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
-//hwfkwfbwkefbw
+
+/**
+ * @author Bekh Artem
+ * servlet contains implementation
+ * of dao method with transaction
+ * After transaction has been commited
+ * Reader with updated credentials
+ * adds to session attribute
+ */
 public class SubscriptionServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
